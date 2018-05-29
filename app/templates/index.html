@@ -1,7 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>MY BLOG</title>
+{% extends 'base.html' %}
+{% import 'macros.html' as macro %}
+{% block content %}
+<div class="container">    
+        <div class="row">
+                  <img src="/static/blog.jpg" class="cover" style="width:100%"/>
+            </div>
         
-    </head>
-</html>
+    <div class="row col-sm-9 col-xs-9 col-md-8 col-lg-8">
+            <h2>MY STORY</h2>
+            <p>Let's begin the journey</p>
+            <p>My name is Canssidle Wairimu Ndung'u.
+                I am a student at Mioringa School currently learning Python.
+                What I love doing during my free time is listenig to music mostly and I also have a passion in dancing.
+                You can actually checkout our page on instagram @ believeindance.
+                Something interesting about me is that I make friends quickly and also love to meet new people </p>
+                
+    <div class="row col-sm-1 col-xs-1 col-md-1 col-lg-1" ></div>
+    <div class="row col-sm-2 col-xs-2 col-md-3 col-lg-3" style="border-left: 3px black">
+        <div class="button btn btn-info">
+            <a href="/subscribe">Subscribe Here</a>
+        </div>
+            <h2>View Blogs</h2>
+                {{macro.displayBlog(mystory)}}
+        </div>
+    </div>
+    <div class="footer" style="background-color:rgb(116, 5, 5); color:rgb(146, 170, 190); font-size:40px;">
+            <div class="row" style="padding-top:6%">
+                    <div class="col-md-2 col-lg-2"></div>
+                    <div class="col-md-4 col-lg-4">
+                        <p>&copy; Copyright 2018 <a href="canssidle@github.com">Canssidle</a></p>  
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                    
+                        <p>Phone Number: 0728074793</p>
+                    </div>
+                    <div class="col-md-2 col-lg-2"></div>    
+                </div>
+            </div>
+{% endblock %}
