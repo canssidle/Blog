@@ -7,28 +7,7 @@
 +
 +This Application is python based and runs on any browser, It allows a user to view and comment posts on my blog, for a writter can also register and start posting posts that will be commented by other users, the user can also subscribe to the app to be informed of a new post via their email, a writter can publish new posts, comment them, delete posts and comments on the posts he/she created.
 
-+### Authentication
-+
-++ Once the url is entered at the browser, the user gets the landing page that has all the posts, the user can comment on the various posts, view all recent posts and subscribe.
-++ For a Writter he can create a personal blog by registering and login. 
-+- If the user is anonymouse, He/she can only view posts, comment and subscribe.
-+- If the writter on the the other hand is Authnticated but logged out, can login again to interact with the app by entering email and password details into a form.
-+- The user last option is to register using a unique username and a password after which the user is redirected to login to the app.
-+- Once the user is authenticated, can logout at will.
-+
-+### Posts.
-+
-++ The Writter Can add Posts and they get displayed from the most resent one.
-++ The post information is displayed alongside other posts, a post contains information such as post body, post author and the time of creation.
-++ On the sidebar the user can see the most recent post.
-+
-+### Subscription
-+
-++ Any user who visits the site can subscribe by submitting his/her desired email via the subscription form.
-+
-+### Blog
-++ The writter can also writter can also edit ther blog, post a new post, delete a post and any comment associated with it.
-+
+
 +## Bugs
 +
 +- Everything
