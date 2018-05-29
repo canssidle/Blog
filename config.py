@@ -1,8 +1,9 @@
 import os
 
 class Config:
-    ULOADED_PHOTOS_DEST="app/static/photos"
-    configure_uploads(app,(photos, media))
+    pass
+#     ULOADED_PHOTOS_DEST="app/static/photos"
+#     configure_uploads(app,(photos, media))
 
 class ProdConfig(Config):
     SQLALCHEMY_DATABASE_URI = os.environ.get("MAIL_USERNAME")

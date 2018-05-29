@@ -26,9 +26,9 @@ def login():
             login_user(user,login_form.remember.data)
             return redirect(request.args.get('next') or url_for('main.index'))
 
-        flash('Invalid username or Password')
+        flash('Incorrect username or Password')
 
-    title = "Pitch login"
+    title = "login"
     return render_template('auth/login.html',login_form = login_form,title=title)
 
 @auth.route('confirm/<token>')
@@ -37,9 +37,9 @@ def confirm(token):
     if current_user.confirmed:
         return redirect(url_for('main.index'))
     if current_user.confirm(token):
-        flash("You have confirmed your account. Thanks!")
+        flash("SUCCESSFUL")
     else:
-        flash("The confirmation link is invalid or has expired.")
+        flash("Your confirmation is invalid.")
     return redirect(url_for('main.index'))
 
 @auth.route('/logout')

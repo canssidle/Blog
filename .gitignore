@@ -2,4 +2,8 @@
 virtual/
 *.pyc
 start.sh
+requirements.txt
+__pycache__
+.vscode
+
 
